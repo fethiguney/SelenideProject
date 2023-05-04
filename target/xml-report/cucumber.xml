@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="9.975">
-    <testcase classname="Navigations" name="Navigations test" time="9.673">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="18.865">
+    <testcase classname="Navigations" name="Navigations test" time="18.464">
         <system-out>
             <![CDATA[Given user goes to "https://www.google.com.tr/" url.........................passed
+Then user goes to "https://www.amazon.com" url..............................passed
+And user waits 5 seconds....................................................passed
+Then user navigates the back page...........................................passed
+And user navigates the forward page.........................................passed
+Then user refresh the page..................................................passed
+And user keeps the page open................................................passed
 ]]>
         </system-out>
     </testcase>
