@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         glue = "stepdefinitions",
         tags = "@locators",
         monochrome = true,
-        dryRun = true
+        dryRun = false
 
 )
 public class Runners {

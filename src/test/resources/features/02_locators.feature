@@ -9,4 +9,4 @@
       |email         |password|
       |test@gmail.com| 1234   |
       When user clicks login button
-      Then "Your email or password is incorrect!" alert message should be displayed
+      Then verify alert message is displayed

@@ -1,8 +1,11 @@
 package stepdefinitions;
 
+
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.*;
 import pages.AutomationExercisePage;
+
+import static com.codeborne.selenide.Condition.*;
 
 import java.util.List;
 import java.util.Map;
@@ -27,8 +30,9 @@ public class AutomationExerciseStepDef {
     public void user_clicks_login_button() {
         automationExercisePage.loginButton.click();
     }
-    @Then("{string} alert message should be displayed")
-    public void alert_message_should_be_displayed(String string) {
+    @Then("verify alert message is displayed")
+    public void alert_message_should_be_displayed() {
+      automationExercisePage.alertMessage.shouldBe(visible);
 
     }
 

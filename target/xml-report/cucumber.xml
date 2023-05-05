@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.471">
-    <testcase classname="Locators" name="Locators Test" time="0.076">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="16.839">
+    <testcase classname="Locators" name="Locators Test" time="16.498">
+        <system-out>
             <![CDATA[Given user goes to "https://www.automationexercise.com/" url................passed
 When user clicks login page.................................................passed
 And user enters email and password..........................................passed
 When user clicks login button...............................................passed
-Then "Your email or password is incorrect!" alert message should be displayed.undefined
+Then verify alert message is displayed......................................passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
 </testsuite>
