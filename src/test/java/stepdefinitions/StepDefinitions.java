@@ -1,11 +1,14 @@
 package stepdefinitions;
 
 
+import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.SelenideElement;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.*;
 import pages.CommonPage;
 
 import static com.codeborne.selenide.Condition.*;
+import static com.codeborne.selenide.Selenide.$;
 
 import java.util.List;
 import java.util.Map;
@@ -53,6 +56,17 @@ public class StepDefinitions {
         }
     }
 
+    @Then("^If \"([a-zA-Z]*)\" radio button is not selected, click the (?:...) radio button and validate$")
+    public void radio_button_control(String radioButton) {
 
+        SelenideElement element=$("#"+radioButton+"");
+
+        if (!element.isSelected()) {
+            element.click();
+        }
+        element.shouldBe(checked);
+        Configuration.holdBrowserOpen=true;
+
+    }
 
 }

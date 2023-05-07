@@ -1,30 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.94">
-    <testcase classname="Checkbox Test" name="Checkbox Test" time="11.612">
-        <failure message="Element should not checked {input[type='checkbox'][1]}&#13;&#10;Element: '&lt;input checked type=&quot;checkbox&quot; value=&quot;on&quot; selected:true&gt;&lt;/input&gt;'&#13;&#10;Actual value: checked&#13;&#10;Screenshot: file:/C:/Users/user/IdeaProjects/SelenideProject/build/reports/tests/1683474535254.0.png&#13;&#10;Page source: file:/C:/Users/user/IdeaProjects/SelenideProject/build/reports/tests/1683474535254.0.html&#13;&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShouldNot">
-            <![CDATA[Given user goes to "https://the-internet.herokuapp.com/checkboxes" url......passed
-Then If checkbox 1 is not selected, click the checkbox and validate.........passed
-And If checkbox 2 is not selected, click the checkbox and validate..........failed
-
-StackTrace:
-Element should not checked {input[type='checkbox'][1]}
-Element: '<input checked type="checkbox" value="on" selected:true></input>'
-Actual value: checked
-Screenshot: file:/C:/Users/user/IdeaProjects/SelenideProject/build/reports/tests/1683474535254.0.png
-Page source: file:/C:/Users/user/IdeaProjects/SelenideProject/build/reports/tests/1683474535254.0.html
-Timeout: 4 s.
-	at com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:143)
-	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:124)
-	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:101)
-	at com.codeborne.selenide.commands.ShouldNot.execute(ShouldNot.java:30)
-	at com.codeborne.selenide.commands.ShouldNot.execute(ShouldNot.java:14)
-	at com.codeborne.selenide.commands.Commands.execute(Commands.java:160)
-	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
-	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
-	at com.sun.proxy.$Proxy19.shouldNot(Unknown Source)
-	at stepdefinitions.StepDefinitions.checkbox_control(StepDefinitions.java:51)
-	at ✽.If checkbox 2 is not selected, click the checkbox and validate(file:///C:/Users/user/IdeaProjects/SelenideProject/src/test/resources/features/03_checkbox.feature:8)
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="6.543">
+    <testcase classname="Checkbox Test" name="Radio Button Test" time="6.23">
+        <system-out>
+            <![CDATA[Given user goes to "https://testcenter.techproeducation.com/index.php?page=radio-buttons" url.passed
+Then If "basketball" radio button is not selected, click the red radio button and validate.passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
 </testsuite>

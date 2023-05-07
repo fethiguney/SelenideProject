@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+import com.codeborne.selenide.Configuration;
 import io.cucumber.java.en.*;
 
 import static com.codeborne.selenide.Selenide.*;
@@ -29,7 +30,7 @@ public class CommonStepDef {
     }
     @Then("user keeps the page open")
     public void user_keeps_the_page_open() {
-
+        Configuration.holdBrowserOpen=true;
     }
 
 }
