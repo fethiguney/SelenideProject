@@ -1,11 +1,13 @@
 package pages;
 
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 
-public class AutomationExercisePage {
+public class CommonPage {
 
     public SelenideElement loginLink=$("a[href='/login']");
 
@@ -16,4 +18,6 @@ public class AutomationExercisePage {
     public SelenideElement loginButton=$("button[data-qa='login-button']");
 
     public SelenideElement alertMessage=$(By.xpath("//*[text()='Your email or password is incorrect!']"));
+
+    public ElementsCollection checkboxes=$$("input[type='checkbox']");
 }
