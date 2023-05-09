@@ -22,5 +22,10 @@ public class CommonPage {
 
     public ElementsCollection checkboxes=$$("input[type='checkbox']");
 
+    public SelenideElement year=$("select#year");
+
+    public SelenideElement month=$("select#month");
+
+    public SelenideElement day=$("select#day");
 
 }

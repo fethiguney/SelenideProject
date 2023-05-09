@@ -10,4 +10,4 @@
     @radioButton
     Scenario: Radio Button Test
       Given user goes to "https://testcenter.techproeducation.com/index.php?page=radio-buttons" url
-      Then If "basketball" radio button is not selected, click the red radio button and validate
+      Then If "basketball" radio button is not selected, click the basketball radio button and validate
