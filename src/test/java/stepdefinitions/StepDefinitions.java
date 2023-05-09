@@ -59,9 +59,9 @@ public class StepDefinitions {
     }
 
     @Then("^If \"([a-zA-Z]*)\" radio button is not selected, click the (?:[a-zA-Z]*) radio button and validate$")
-    public void radio_button_control(String radioButton) {
+    public void radio_button_control(String radioButtonId) {
 
-        SelenideElement element=$("#"+radioButton+"");
+        SelenideElement element=commonPage.radioButton(radioButtonId);
 
         if (!element.isSelected()) {
             element.click();

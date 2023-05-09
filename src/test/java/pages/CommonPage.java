@@ -22,6 +22,10 @@ public class CommonPage {
 
     public ElementsCollection checkboxes=$$("input[type='checkbox']");
 
+    public SelenideElement radioButton(String str){
+        return $("#"+str);
+    }
+
     public SelenideElement year=$("select#year");
 
     public SelenideElement month=$("select#month");

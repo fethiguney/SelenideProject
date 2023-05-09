@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="6.531">
-    <testcase classname="Dropdown Test" name="Dropdown test" time="6.197">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="6.328">
+    <testcase classname="Checkbox Test" name="Radio Button Test" time="5.999">
         <system-out>
-            <![CDATA[Given user goes to "https://testcenter.techproeducation.com/index.php?page=dropdown" url.passed
-Then user selects 01 day "June" month and 2006 year.........................passed
+            <![CDATA[Given user goes to "https://testcenter.techproeducation.com/index.php?page=radio-buttons" url.passed
+Then If "basketball" radio button is not selected, click the basketball radio button and validate.passed
 ]]>
         </system-out>
     </testcase>
