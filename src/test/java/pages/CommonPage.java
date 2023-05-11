@@ -32,4 +32,17 @@ public class CommonPage {
 
     public SelenideElement day=$("select#day");
 
+    public void jsPromptButtonClick(){
+         SelenideElement jsprompt= $(By.xpath("//button[@onclick='jsPrompt()']"));
+         jsprompt.click();
+    }
+
+    public SelenideElement jsPromptResultText(){
+        return $("#result");
+
+    }
+    public void backToTechproLinkClick(){
+        SelenideElement backtoTechpro=$(".btn.btn-primary.btn-lg");
+        backtoTechpro.click();
+    }
 }

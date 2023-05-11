@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="6.328">
-    <testcase classname="Checkbox Test" name="Radio Button Test" time="5.999">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="7.972">
+    <testcase classname="Iframe and Multiple Window" name="Iframe and Multiple Window Test" time="7.623">
         <system-out>
-            <![CDATA[Given user goes to "https://testcenter.techproeducation.com/index.php?page=radio-buttons" url.passed
-Then If "basketball" radio button is not selected, click the basketball radio button and validate.passed
+            <![CDATA[Given user goes to "https://testcenter.techproeducation.com/index.php?page=iframe" url.passed
+When user switch to iframe 1................................................passed
+And user clicks on back to techproeducation button..........................passed
+When user switch to window 2................................................passed
+And user keeps the page open................................................passed
 ]]>
         </system-out>
     </testcase>
