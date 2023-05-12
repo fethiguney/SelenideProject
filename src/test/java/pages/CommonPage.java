@@ -45,4 +45,5 @@ public class CommonPage {
         SelenideElement backtoTechpro=$(".btn.btn-primary.btn-lg");
         backtoTechpro.click();
     }
+    public SelenideElement automationExerciseLogo=$("div.logo.pull-left");
 }

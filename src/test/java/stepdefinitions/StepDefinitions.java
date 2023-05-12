@@ -13,6 +13,7 @@ import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.*;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -117,5 +118,14 @@ public class StepDefinitions {
     @When("user switch to window {int}")
     public void user_switch_to_window(Integer targetWindow) {
         switchTo().window(targetWindow-1);
+    }
+
+    @When("user takes the screenshot of page")
+    public void user_takes_the_screenshot_of_page(){
+        screenshot(new Date().toString());
+    }
+    @And("^user takes the screenshot of (?:[a-zA-Z]*) image$")
+    public void user_takes_the_screenshot_of_webelement(){
+        commonPage.automationExerciseLogo.screenshot();
     }
 }
