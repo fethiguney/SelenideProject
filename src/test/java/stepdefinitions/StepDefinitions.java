@@ -128,4 +128,22 @@ public class StepDefinitions {
     public void user_takes_the_screenshot_of_webelement(){
         commonPage.automationExerciseLogo.screenshot();
     }
+
+    @Given("^user selects (chrome|firefox|edge) as the browser$")
+    public void user_selects_the_browser(String browser){
+
+        switch (browser) {
+            case ("chrome"):
+                Configuration.browser="chrome";
+                break;
+            case ("firefox"):
+                Configuration.browser="firefox";
+                break;
+            case ("edge"):
+                Configuration.browser="edge";
+                break;
+
+        }
+    }
+
 }

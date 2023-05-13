@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="33.871">
-    <testcase classname="Take ScreenShot" name="Take screenshot test" time="33.011">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="9.697">
+    <testcase classname="Cross Browser" name="chrome" time="9.339">
         <system-out>
-            <![CDATA[Given user goes to "https://automationexercise.com" url.....................passed
-When user takes the screenshot of page......................................passed
-And user takes the screenshot of automationexercise image...................passed
+            <![CDATA[Given user selects chrome as the browser....................................passed
+And user goes to "https://google.com" url...................................passed
 ]]>
         </system-out>
     </testcase>
