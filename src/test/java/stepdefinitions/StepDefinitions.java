@@ -67,13 +67,13 @@ public class StepDefinitions {
     @Then("^If \"([a-zA-Z]*)\" radio button is not selected, click the (?:[a-zA-Z]*) radio button and validate$")
     public void radio_button_control(String radioButtonId) {
 
-        SelenideElement element = commonPage.radioButton(radioButtonId);
+        SelenideElement element=$("#"+radioButtonId);
+
 
         if (!element.isSelected()) {
             element.click();
         }
         element.shouldBe(checked);
-
     }
 
     @Then("^user selects ([0-9]{2}+) day \"([a-zA-Z]*)\" month and ([0-9]{4}+) year$")
@@ -129,7 +129,7 @@ public class StepDefinitions {
         commonPage.automationExerciseLogo.screenshot();
     }
 
-    @Given("^user selects (chrome|firefox|edge) as the browser$")
+    @Given("^user selects (chrome|firefox|edge|headless) as the browser$")
     public void user_selects_the_browser(String browser){
 
         switch (browser) {
@@ -142,6 +142,8 @@ public class StepDefinitions {
             case ("edge"):
                 Configuration.browser="edge";
                 break;
+            case("headless"):
+                Configuration.headless=true;
 
         }
     }
